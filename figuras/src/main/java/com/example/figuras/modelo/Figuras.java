@@ -19,4 +19,5 @@ public abstract class Figuras implements Requerimiento01 {
     
     public abstract float getAltura();
     public abstract float getBase();
+    public abstract float getRadio();
 }

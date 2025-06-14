@@ -1,6 +1,6 @@
 package com.example.figuras.modelo;
 
-public class Rectangulo extends Figuras {
+public abstract class Rectangulo extends Figuras {
     public Rectangulo(){
         super(0f, 0f);
     }
