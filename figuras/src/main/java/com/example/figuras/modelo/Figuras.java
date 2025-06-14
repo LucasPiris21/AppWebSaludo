@@ -5,10 +5,6 @@ import com.example.figuras.requerimiento.Requerimiento01;
 public abstract class Figuras implements Requerimiento01 {
     private float[] dimensiones;
 
-    public Figuras(float x, float y, float z) {
-        this.dimensiones = new float[] {x, y, z};
-    }
-
     public Figuras(float x, float y) {
         this.dimensiones = new float[] {x, y};
     }
@@ -21,5 +17,6 @@ public abstract class Figuras implements Requerimiento01 {
         return dimensiones;
     }
     
-    
+    public abstract float getAltura();
+    public abstract float getBase();
 }
