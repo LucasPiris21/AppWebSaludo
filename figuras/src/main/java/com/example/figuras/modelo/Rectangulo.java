@@ -1,32 +1,19 @@
 package com.example.figuras.modelo;
 
-public abstract class Rectangulo extends Figuras {
+public class Rectangulo extends FigurasXY {
+    
     public Rectangulo(){
-        super(0f, 0f);
-    }
-
-
-    @Override
-    public float getBase() {
-        return this.getDimensiones()[0];
-    }
-
-    @Override
-    public float getAltura() {
-        return this.getDimensiones()[1];
+        super();
     }
 
     @Override
     public Float calcularArea() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calcularArea'");
+        return this.getX() * this.getY();
     }
 
     @Override
     public Float calcularPerimetro() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calcularPerimetro'");
+        return (2*this.getX() + 2*this.getY());  
     }
-
     
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Index</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>Ingrese su nombre:</h2>
+    <form id="saludoForm">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido">
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <div class="resultado-card" id="saludoResultado"></div>
+    <br>
+    <div class="opciones-card" id="opciones">
+        <form id="opcionesForm">
+            <select name="figura" id="figura">
+                <option value="Rectangulo">Rectangulo</option>
+                <option value="Triangulo Rectangulo">Triangulo Rectangulo</option>
+                <option value="Circulo">Circulo</option>
+            </select>
+            <button type="submit">Seleccionar</button>
+        </form>
+    </div>
+    <div class="dimensiones-card" id="dimensiones">
+        <h2>Ingrese las dimensiones de la figura:</h2>
+        <form id="rectanguloForm">
+            <label for="base">Base (en cm): </label>
+            <input type="string" id="base" name="base">
+            <label for="altura">Altura (en cm): </label>
+            <input type="string" id="altura" name="altura">
+            <button type="submit">Calcular</button>
+        </form>
+        <form id="triRecForm">
+            <label for="base">Base (en cm): </label>
+            <input type="string" id="base" name="base">
+            <label for="altura">Altura (en cm): </label>
+            <input type="string" id="altura" name="altura">
+            <button type="submit">Calcular</button>
+        </form>
+        <form id="circuloForm">
+            <label for="base">Radio (en cm): </label>
+            <input type="string" id="radio" name="radio">
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+    <div class="resultados-card" id="resultados">
+        <h2>Resultados:</h2>
+        <div class="rectangulo-resultados-card" id="rectangulo-resultados"></div>
+        <div class="triRec-resultados-card" id="triRec-resultados"></div>
+        <div class="circulo-resultados-card" id="circulo-resultados"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

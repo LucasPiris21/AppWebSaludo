@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FigurasApplication<figuras>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.figuras.FigurasApplication",
+            "projectName": "figuras",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

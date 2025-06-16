@@ -1,0 +1,36 @@
+.opciones-card {
+  display: none;
+}
+
+#rectanguloForm {
+  display: none;
+}
+
+#triRecForm{
+  display: none;
+}
+
+#circuloForm{
+  display: none;
+}
+
+.rectangulo-resultados-card{
+  display: none;
+}
+
+.dimensiones-card{
+  display: none;
+}
+
+.resultados-card{
+  display: none;
+}
+
+.triRec-resultados-card{
+  display: none;
+}
+
+.circulo-resultados-card{
+  display: none;
+}
+

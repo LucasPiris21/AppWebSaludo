@@ -8,6 +8,8 @@ public class FigurasApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FigurasApplication.class, args);
+
+		System.out.println("Aplicación iniciada....");
 	}
 
 }
