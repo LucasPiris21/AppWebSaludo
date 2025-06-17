@@ -8,55 +8,67 @@
 </head>
 
 <body>
-    <h2>Ingrese su nombre:</h2>
-    <form id="saludoForm">
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre">
-        <label for="apellido">Apellido: </label>
-        <input type="text" id="apellido" name="apellido">
-        <button type="submit">Enviar</button>
-    </form>
-    <br>
-    <div class="resultado-card" id="saludoResultado"></div>
-    <br>
-    <div class="opciones-card" id="opciones">
-        <form id="opcionesForm">
-            <select name="figura" id="figura">
-                <option value="Rectangulo">Rectangulo</option>
-                <option value="Triangulo Rectangulo">Triangulo Rectangulo</option>
-                <option value="Circulo">Circulo</option>
-            </select>
-            <button type="submit">Seleccionar</button>
-        </form>
-    </div>
-    <div class="dimensiones-card" id="dimensiones">
-        <h2>Ingrese las dimensiones de la figura:</h2>
-        <form id="rectanguloForm">
-            <label for="base">Base (en cm): </label>
-            <input type="string" id="base" name="base">
-            <label for="altura">Altura (en cm): </label>
-            <input type="string" id="altura" name="altura">
-            <button type="submit">Calcular</button>
-        </form>
-        <form id="triRecForm">
-            <label for="base">Base (en cm): </label>
-            <input type="string" id="base" name="base">
-            <label for="altura">Altura (en cm): </label>
-            <input type="string" id="altura" name="altura">
-            <button type="submit">Calcular</button>
-        </form>
-        <form id="circuloForm">
-            <label for="base">Radio (en cm): </label>
-            <input type="string" id="radio" name="radio">
-            <button type="submit">Calcular</button>
-        </form>
-    </div>
-    <div class="resultados-card" id="resultados">
-        <h2>Resultados:</h2>
-        <div class="rectangulo-resultados-card" id="rectangulo-resultados"></div>
-        <div class="triRec-resultados-card" id="triRec-resultados"></div>
-        <div class="circulo-resultados-card" id="circulo-resultados"></div>
-    </div>
+    <main class="contenedor-principal">
+        <section>
+            <form id="saludoForm">
+                <h2>Ingrese su nombre</h2>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <div class="opciones-card" id="opciones">
+                <form id="opcionesForm">
+                    <div class="resultado-card" id="saludoResultado"></div>
+                    <select name="figura" id="figura" id>
+                        <option value="Rectangulo">Rectangulo</option>
+                        <option value="Triangulo Rectangulo">Triangulo Rectangulo</option>
+                        <option value="Circulo">Circulo</option>
+                    </select>
+                    <button type="submit">Seleccionar</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="dimensiones-card" id="dimensiones">
+                <form id="rectanguloForm">
+                    <h2>Ingrese las dimensiones de la figura:</h2>
+                    <label for="base">Base (en cm): </label>
+                    <input type="number" id="base" name="base" required><br>
+                    <label for="altura">Altura (en cm): </label>
+                    <input type="number" id="altura" name="altura" required>
+                    <button type="submit">Calcular</button>
+                </form>
+                <form id="triRecForm">
+                    <h2>Ingrese las dimensiones de la figura:</h2>
+                    <label for="base">Base (en cm): </label>
+                    <input type="number" id="base" name="base" required><br>
+                    <label for="altura">Altura (en cm): </label>
+                    <input type="number" id="altura" name="altura" required>
+                    <button type="submit">Calcular</button>
+                </form>
+                <form id="circuloForm">
+                    <h2>Ingrese las dimensiones de la figura:</h2>
+                    <label for="radio">Radio (en cm): </label>
+                    <input type="number" id="radio" name="radio" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="resultados-card" id="resultados">
+                <div class="rectangulo-resultados-card" id="rectangulo-resultados"></div>
+                <div class="triRec-resultados-card" id="triRec-resultados"></div>
+                <div class="circulo-resultados-card" id="circulo-resultados"></div>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="script.js"></script>
 

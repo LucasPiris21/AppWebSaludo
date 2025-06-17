@@ -18,7 +18,7 @@ public class Controller {
                             @RequestParam(required = false) String apellido) {
         
         HolaMundo saludo = new HolaMundo(nombre, apellido);
-        return "Hola " + saludo.nombre() + " " + saludo.apellido() + ", ¿que figura quieres calcular?";
+        return "<h2>Hola " + saludo.nombre() + " " + saludo.apellido() + ", ¿que figura quieres calcular?</h2>";
     }
     
     @GetMapping("/rectangulo")
@@ -27,7 +27,8 @@ public class Controller {
         Rectangulo rectangulo = new Rectangulo();
         rectangulo.setX(Float.parseFloat(base));
         rectangulo.setY(Float.parseFloat(altura));
-        return "<ul>" +
+        return "<h2>Resultados:</h2>" 
+               +"<ul>" +
                "<li><b>Área:</b> " + rectangulo.calcularArea() + " cm<sup>2</sup></li>" +
                "<li><b>Perímetro:</b> " + rectangulo.calcularPerimetro() + " cm</li>" +
                "</ul>";
@@ -39,7 +40,8 @@ public class Controller {
         TrianguloRectangulo trianguloRectangulo = new TrianguloRectangulo();
         trianguloRectangulo.setX(Float.parseFloat(base));
         trianguloRectangulo.setY(Float.parseFloat(altura));
-        return "<ul>" +
+        return "<h2>Resultados:</h2>" 
+               +"<ul>" +
                "<li><b>Área:</b> " + trianguloRectangulo.calcularArea() + " cm<sup>2</sup></li>" +
                "<li><b>Perímetro:</b> " + trianguloRectangulo.calcularPerimetro() + " cm</li>" + 
                "<li><b>Hipotenúsa:</b> " + trianguloRectangulo.calcularHipotenusa() + " cm</li>" +
@@ -51,7 +53,8 @@ public class Controller {
     public String circulo(@RequestParam String radio) {
         Circulo circulo = new Circulo();
         circulo.setX(Float.parseFloat(radio));
-        return "<ul>" +
+        return "<h2>Resultados:</h2>" 
+               +"<ul>" +
                "<li><b>Diametro:</b> " + circulo.calcularDiametro() + " cm</li>" +
                "<li><b>Área:</b> " + circulo.calcularArea() + " cm<sup>2</sup></li>" + 
                "<li><b>Circunferencia:</b> " + circulo.calcularPerimetro() + " cm</li>" +
